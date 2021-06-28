@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes animationName {
+            from{background-color: green;}
+            to{background-color: blue;}
+        }
+
+        #div1 {
+            height: 100px;
+            width: 100px;
+            animation-name: animationName;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: 1;
+            /* Default value: normal */
+            /* Animation backwards - reverse */
+            /* Animation alternate forwards & backwards */
+            /* Animation alternate-reverse backwards & forwards */
+            animation-direction: normal;
+            /* Ease, Ease-in, Ease-out */
+            animation-timing-function: linear;
+            /* Keeps the styles of the keyframe - normal */
+            /* Keeps the styles of the first part of the keyframe -backwards */
+            /* The styles of the first then the second will be applied - both */
+            animation-fill-mode: both;
+            /* Animation does not play */
+            /* Running means it will run */
+            animation-play-state: paused;
+        }
+        #div2 {
+            height: 100px;
+            width: 100px;
+            animation: animationName 3s ease-out 1s 1 alternate-reverse both running;
+        }
+    </style>
+    <title>Animation Properties</title>
+</head>
+<body>
+    <div id="div1"></div>
+    <br/>
+    <div id="div2"></div>
+</body>
+</html>

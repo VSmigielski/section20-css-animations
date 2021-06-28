@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #div1 {width: 100px; height: 100px; background-color: blue; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 50px; 
+        animation-name: anim;
+        animation-duration: 2s; 
+        animation-iteration-count: infinite; 
+        animation-timing-function: linear;
+        }
+        @keyframes anim {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+        #div2 {width: 100px; height: 100px; background-color: purple; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 50px; 
+        animation-name: anim1;
+        animation-duration: 2s; 
+        animation-iteration-count: infinite; 
+        animation-timing-function: linear;
+        }
+        @keyframes anim1 {
+            from{transform: translate(10px);}
+            to{transform: translate(100px);}
+        }
+
+        #div3 {width: 100px; height: 100px; background-color: rgb(197, 86, 197); 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 50px; 
+        animation-name: anim2;
+        animation-duration: 2s; 
+        animation-iteration-count: infinite; 
+        animation-timing-function: linear;
+        }
+        @keyframes anim2 {
+            from{transform: scale(0.1);}
+            to{transform: scale(1.0);}
+        }
+
+        #div4 {width: 100px; height: 100px; background-color: blueviolet; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 50px; 
+        animation-name: anim3;
+        animation-duration: 2s; 
+        animation-iteration-count: infinite; 
+        animation-timing-function: linear;
+        }
+        @keyframes anim3 {
+            from{transform: skew(40deg);}
+            to{transform: skew(-40deg);}
+        }
+    </style>
+    <title>2D Animation</title>
+</head>
+<body>
+    <div id="div1"></div>
+    <br/>
+    <div id="div2"></div>
+    <br/>
+    <div id="div3"></div>
+    <br/>
+    <div id="div4"></div>
+</body>
+</html>

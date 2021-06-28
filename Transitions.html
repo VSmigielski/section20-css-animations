@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #div1 {height: 200px; width: 200px; background-color: plum; transition: height 3s;}
+        #div1:hover {height: 400px;}
+        #div2 {height: 200px; width: 200px; background-color: lightslategray; transition: background-color 3s;}
+        #div2:hover {background-color: lightblue;}
+        #div3 {height: 200px; width: 200px; background-color: pink; transition: background-color 3s, height 3s;}
+        #div3:hover {background-color: lightseagreen; height: 400px;}
+        #div4 {height: 200px; width: 200px; background-color: purple; transition: background-color 3s, height 3s; 
+            transition-delay: 1s;}
+        #div4:hover {background-color: lightskyblue; height: 400px;}
+        #div5 {height: 200px; width: 200px; background-color: orangered; transition-property: background-color; 
+            transition-delay: 1s; transition-duration: 3s; transition-timing-function: ease;}
+        #div5:hover {background-color: lightyellow;}
+        #div6 {height: 200px; width: 200px; background-color: lightcoral; transition-property: background-color; 
+            transition-delay: 1s; transition-duration: 3s; transition-timing-function: linear;}
+        #div6:hover {background-color: lightcyan;}
+        #div7 {height: 200px; width: 200px; background-color: crimson; transition-property: background-color; 
+            transition-delay: 1s; transition-duration: 3s; transition-timing-function: ease-in;}
+        #div7:hover {background-color: royalblue;}
+        #div8 {height: 200px; width: 200px; background-color: blue; transition-property: background-color; 
+            transition-delay: 1s; transition-duration: 3s; transition-timing-function: ease-out;}
+        #div8:hover {background-color: blueviolet;}
+    </style>
+    <title>Transition Properties</title>
+</head>
+<body>
+    <div id="div1"></div>
+    <br/>
+    <div id="div2"></div>
+    <br/>
+    <div id="div3"></div>
+    <br/>
+    <div id="div4"></div>
+    <br/>
+    <div id="div5"></div>
+    <br/>
+    <div id="div6"></div>
+    <br/>
+    <div id="div7"></div>
+    <br/>
+    <div id="div8"></div>
+</body>
+</html>
